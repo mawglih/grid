@@ -160,3 +160,122 @@
    font-family: sans-serif;
    background-color: orangered; 
 }
+
+/* page 6  */
+
+.container6 {
+  width: 1000px;
+  margin: 30px auto;
+  background-color: #ccc;
+  display: grid ;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 150px);
+  grid-gap: 30px;
+  grid-auto-rows: 80px;
+  grid-auto-flow: column;
+  grid-auto-columns: .5fr;
+  align-items: start;
+  justify-items: end;
+}
+.item6 {
+   padding: 20px;
+   color: white;
+   font-family: sans-serif;
+   background-color: orangered; 
+}
+.item6--4 {
+  background-color: crimson;
+  grid-row: 2 /span 3;
+}
+
+.item6--7 {
+  background-color: palevioletred;
+  grid-column: 1 /-1;
+  align-self: end;
+}
+
+/* page 7 */
+.container7 {
+  width: 90%;
+  margin: 30px auto;
+  background-color: #ccc;
+  display: grid ;
+  /* grid-template-rows: repeat(2, min-content); */
+  /* grid-template-columns: max-content 1fr 1fr min-content; */
+  grid-template-rows: repeat(2, minmax(150px, min-content));
+  grid-template-columns: minmax(250px, 50%) repeat(2, 1fr);
+}
+.item7 {
+   padding: 20px;
+   color: white;
+   font-family: sans-serif;
+   font-size: 20px;
+}
+.item7--1 {
+  background-color: orangered;
+}
+.item7--2 {
+  background-color: yellowgreen;
+}
+.item7--3 {
+  background-color: rebeccapurple;
+}
+.item7--4 {
+  background-color: sienna;
+}
+.item7--5 {
+  background-color: goldenrod;
+}
+.item7--6 {
+  background-color: blue;
+}
+.item7--7 {
+  background-color: aquamarine;
+  color: black;
+}
+.item7--8 {
+  background-color: salmon;
+}
+
+/* page 8 */
+.container8 {
+  width: 1000px;
+  margin: 30px auto;
+  background-color: #ccc;
+  display: grid ;
+  grid-template-rows: repeat(2, minmax(150px, min-content));
+  /* grid-template-columns: repeat(auto-fill, 100px); */
+  grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+}
+.item8 {
+   padding: 20px;
+   color: white;
+   font-family: sans-serif;
+   font-size: 20px;
+   background-color: orangered;
+}
+.item8--1 {
+  background-color: orangered;
+}
+.item8--2 {
+  background-color: yellowgreen;
+}
+.item8--3 {
+  background-color: rebeccapurple;
+}
+.item8--4 {
+  background-color: sienna;
+}
+.item8--5 {
+  background-color: goldenrod;
+}
+.item8--6 {
+  background-color: blue;
+}
+.item8--7 {
+  background-color: aquamarine;
+  color: black;
+}
+.item8--8 {
+  background-color: salmon;
+}
