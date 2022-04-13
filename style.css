@@ -280,3 +280,62 @@
 .item8--8 {
   background-color: salmon;
 }
+
+/* page 9 */
+
+.container9 {
+  width: 1000px;
+  background-color: #ccc;
+  margin: 40px auto;
+}
+
+.select-item {
+  width: 160px;
+  height: 40px;
+  border: 1px #222 solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: aliceblue;
+}
+
+.options-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY( 44px);
+  /* width: auto; */
+  border: 1px #222 solid;
+  
+  /* grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-auto-columns: 150px; */
+}
+.options-list {
+  list-style-type: none;
+  display: grid;
+  grid-row-gap: 10px;
+  grid-column-gap: 40px;
+  grid-template-rows: repeat(4, 40px);
+  grid-template-columns: 160px minmax(160px, min-content);
+  grid-auto-flow: column;
+  padding: 0;
+}
+.list-item {
+  box-sizing: border-box;
+  width: 160px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid #888;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-text {
+  align-self: flex-end;
+}
